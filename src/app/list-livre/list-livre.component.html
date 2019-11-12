@@ -1,0 +1,7 @@
+<h1>{{titre}}</h1>
+<ul>
+    <li *ngFor=" let t of tab">
+        <app-livre [nom]="t.titre" [prix]="t.prix" [date]="t.date" [img]="t.couverture"></app-livre>
+        </li>
+        </ul>
+

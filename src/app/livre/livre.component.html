@@ -1,0 +1,10 @@
+<img [src]="img"/>
+<ul>
+
+    <li [ngStyle]="{color:red,'fond_weight:bold'">{{nom}}</li>
+    <li>prix :{{prix}}</li>
+    <li>Date Edition :{{date |date:'MMM - y' | uppercase}}</li>
+    <li> Donnez un % de promotion <input type="number" [(ngModel)]="val"/></li>
+    </ul>
+    <p *ngIf="val<1 || val>0";>{{val}}</p>
+    
